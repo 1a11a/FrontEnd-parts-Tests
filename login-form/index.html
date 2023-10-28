@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
+    <div class="container " id="login-form">
         <h2>Please Login</h2>
 
-        <form>
-
-
+        <form >
             <div class="form-control">
                 <input type="text" required>
                 <label>Email</label>
@@ -23,15 +19,33 @@
                 <input type="password" required>
                 <label>Password</label>
             </div>
-
             <button class="login-btn">Login</button>
+            <p class="login-text">Don't have an account? <a href="#" id="register-link">Register</a></p>
+        </form>
 
-            <p class="login-text">Dont Have an account? <a href="#">Register</a></p>
+        
+    </div>
+
+    <div class="container " id="register-form" style="display: none;">
+        <h2>Please Register</h2>
+        <form >
+            <div class="form-control">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button class="register-btn">Register</button>
+            <p class="register-text">Already have an account? <a href="#" id="login-link">login</a></p>
         </form>
     </div>
     <script src="script.js"></script>
-
     <p>Developed by <a href="https://github.com/1a11a">Supun Sooryasena</a></p>
 </body>
-
 </html>
