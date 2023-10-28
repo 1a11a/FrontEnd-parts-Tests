@@ -62,7 +62,8 @@ border-radius: 5px;
     color: lightblue;
     transform: translateY(-30px);
   }
-.login-btn{
+.login-btn,
+.register-btn{
     cursor: pointer;
     display: inline-block;
     width: 100%;
@@ -74,12 +75,15 @@ border-radius: 5px;
     border-radius: 5px;
 
 }
-.login-btn:focus{
+.login-btn:focus,
+.register-btn:focus{
     outline: 0;
 }
-.login-btn:active{
+.login-btn:active,
+.register-btn:active{
     transform: scale(0.98);
 }
-.login-text{
+.login-text,
+.register-text{
     margin-top: 30px;
 }
